@@ -16,7 +16,7 @@ jobs:
       - run: Write-Host 'Hello, Windows'
       - run:
           name: "Install project dependencies"
-          command: dotnet.exe restore
+          command: nuget.exe restore
       - run:
           name: "Run Build step"
           command: msbuild
